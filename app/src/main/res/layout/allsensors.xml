@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:weightSum="1"
+    android:orientation="vertical"
+    android:background="@drawable/navi"
+    >
+
+
+    <Button
+        android:text="Menü"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnBackAct2"
+
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="65dp"
+        android:background="@drawable/greenbutton"
+        />
+
+
+    <TextView
+        android:text="GyroScope "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/gyroSensorAllSensors"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="55dp"
+        android:layout_below="@+id/accSensorAllSensors"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+
+        android:background="@drawable/backtextview"
+        />
+
+    <TextView
+        android:text="RotationVector"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/rotVectSensor"
+        android:background="@drawable/backtextview"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="Accelerometer Error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="53dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/accSensorAllSensors"
+        android:background="@drawable/backtextview"
+        android:layout_below="@+id/proxSensAllSensors"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Proximity Sensor Error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/proxSensAllSensors"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/backtextview"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>

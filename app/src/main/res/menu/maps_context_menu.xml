@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:title="Reset Route"
+        app:showAsAction="always"
+        android:id="@+id/resetroute" />
+    <item
+        android:id="@+id/GPSAufnehmen"
+        android:title="GPSAufnehmen"
+        android:icon="@drawable/map_marker"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/GPSHighStart"
+        android:title="GPS-Aufnahme (High) Starten"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/GPSLowStart"
+        android:title="GPS-Aufnahme (Low) Starten"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/GPSStop"
+        android:title="GPS-Aufnahme Stoppen"
+        app:showAsAction="never"/>
+    <item android:title="Route 1 anzeigen"
+        android:id="@+id/route1anzeigen" />
+    <item android:title="Route 1 gem. anzeigen"
+        android:id="@+id/route1gemessen" />
+    <item android:title="Item" />
+    <item android:title="Fehler Graph"
+        android:id="@+id/fehlerGraph"/>
+</menu>

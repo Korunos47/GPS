@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Zeitraum auswählen" android:id="@+id/periodicDistTime"/>
+
+    <item android:title="max Distanz wählen" android:id="@+id/distkonfig"/>
+
+    <item android:title="Energie sparen" android:id="@+id/saveEnergyRB" android:checkable="true" />
+    <item android:title="Energie sparen(Stillstand)" android:id="@+id/saveEnergyS" android:checkable="true" android:visible="false" />
+    <item android:title="Max Geschw. wählen" android:id="@+id/maxSpeed"  android:visible="false" />
+
+
+
+</menu>

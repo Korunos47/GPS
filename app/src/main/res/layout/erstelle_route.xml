@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/erstelleRoutelayout"
+    android:title="Route erstellen: "
+    android:weightSum="1">
+
+
+    <EditText
+        android:hint="Route Name"
+        android:id="@+id/routeName"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:inputType="text"
+        android:selectAllOnFocus="false"
+        />
+
+    <EditText
+        android:hint="VonanzGPSPunkte"
+        android:id="@+id/anfanganzGPSPunkte"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:layout_weight="0.00" />
+
+    <EditText
+        android:hint="BisanzGPSPunkte"
+        android:id="@+id/anzGPSPunkte"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:layout_weight="0.00" />
+
+    <CheckBox
+    android:text="Linie"
+    android:id="@+id/GPSlinieCheckbox"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+
+
+    />
+
+    <CheckBox
+        android:text="Punkte"
+        android:id="@+id/GPSpunktCheckbox"
+        android:layout_height="49dp"
+        android:layout_width="327dp"
+        android:checked="true"/>
+
+    <TextView
+        android:text="Farbe: "
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/farbeAuswahl"
+        android:layout_weight="0.04"
+        android:textSize="16sp" />
+
+    <CheckBox
+        android:text="Blau"
+        android:id="@+id/farbeBlau"
+        android:layout_height="wrap_content"
+        android:layout_width="144dp"
+        android:checked="false"/>
+
+    <CheckBox
+        android:text="Schwarz"
+        android:id="@+id/farbeSchwarz"
+        android:layout_height="wrap_content"
+        android:layout_width="145dp"
+        android:checked="false"/>
+
+</LinearLayout>

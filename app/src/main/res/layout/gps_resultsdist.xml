@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="374dp"
+        android:id="@+id/gpsresultsListViewDist"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_weight="0.70" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="CurrentSpeed"
+            android:layout_width="96dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/crtSpeed"
+            android:textAlignment="center" />
+
+        <TextView
+            android:text="-.- sec"
+            android:layout_width="133dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tlimit"
+            android:layout_weight="1"
+            android:textAlignment="center" />
+
+        <TextView
+            android:text="LastDist"
+            android:layout_width="137dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/LastDist"
+            android:layout_weight="1"
+            android:textAlignment="center" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:weightSum="1">
+
+        <TextView
+            android:text="vEst"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/vest"
+            android:layout_weight="0.39"
+            android:textAlignment="center" />
+
+        <TextView
+            android:text="MaxGeschw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/maxgeschwV"
+            android:layout_weight="0.47"
+            android:textAlignment="center" />
+
+        <TextView
+            android:text="MaxDist"
+            android:layout_width="119dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/maxdistV"
+            android:layout_weight="0.07"
+            android:textAlignment="center" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="22dp">
+
+        <TextView
+            android:text="accDist"
+            android:layout_width="83dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/accDist"
+            android:textAlignment="center" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="gps.gps_uniproject.Mainmenu">
+
+    <Button
+        android:text="Start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="65dp"
+        android:id="@+id/start"
+        android:background="@android:color/background_light" />
+
+    <CheckBox
+        android:background="@android:color/white"
+        android:text="GPS Sensor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="81dp"
+        android:id="@+id/GPSCheckbox"
+        android:layout_marginRight="56dp"
+        android:layout_marginEnd="56dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/start"
+        android:layout_alignEnd="@+id/start" />
+
+    <CheckBox
+        android:text="Accelerometer"
+        android:background="@android:color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/AccelerometerCheckbox"
+        android:layout_below="@+id/GPSCheckbox"
+        android:layout_alignLeft="@+id/GPSCheckbox"
+        android:layout_alignStart="@+id/GPSCheckbox"
+        android:layout_marginTop="12dp"
+        android:visibility="gone" />
+
+    <CheckBox
+        android:text="All Sensors"
+        android:background="@android:color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/AllSensorCheckbox"
+        android:layout_below="@+id/AccelerometerCheckbox"
+        android:layout_alignLeft="@+id/AccelerometerCheckbox"
+        android:layout_alignStart="@+id/AccelerometerCheckbox"
+        android:layout_marginTop="17dp"
+        android:visibility="gone" />
+
+    <CheckBox
+        android:background="@android:color/white"
+        android:text="Show on Google Maps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/GoogleMapsCheckbox"
+        android:layout_below="@+id/AllSensorCheckbox"
+        android:layout_alignLeft="@+id/AllSensorCheckbox"
+        android:layout_alignStart="@+id/AllSensorCheckbox"
+        android:layout_marginTop="12dp"
+        android:visibility="gone" />
+
+
+    <TextView
+        android:text=""
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="23dp"
+        android:id="@+id/act1warning" />
+
+    <Button
+        android:text="Route1 Distanz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/GoogleMapsCheckbox"
+        android:layout_alignStart="@+id/GoogleMapsCheckbox"
+        android:id="@+id/ShowRoute1" />
+
+    <Button
+        android:text="Ruote2 Distanz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ShowRoute2"
+        android:layout_below="@+id/ShowRoute1"
+        android:layout_alignStart="@+id/ShowRoute1" />
+
+    <Button
+        android:text="Periodisches Reporting"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ShowRoute2"
+        android:layout_alignStart="@+id/ShowRoute2"
+        android:id="@+id/periodicbutton"
+        android:layout_toStartOf="@+id/act1warning"
+        android:layout_width="wrap_content"
+        android:layout_alignEnd="@+id/ShowRoute2" />
+
+    <Button
+        android:text="Period. Reporting inkl. Distance konfig und energySave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/periodicbutton"
+        android:layout_alignStart="@+id/periodicbutton"
+        android:id="@+id/periodicbtndist"
+        android:layout_alignEnd="@+id/periodicbutton"
+        android:textSize="14sp" />
+
+</RelativeLayout>
+
+
+
+
