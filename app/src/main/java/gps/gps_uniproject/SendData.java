@@ -35,14 +35,12 @@ public class SendData {
         //parameter die gesendet werden sollen
         String urlParameter = "longitude="+longitudeString+"&latitude="+latitudeString+"&locationTime="+locationTimeString+"&timestamp="+timestamp;
 
-        // Evangelos
         byte[] outputInBytes = urlParameter.getBytes("UTF-8");
         OutputStream os = connection.getOutputStream();
         os.write(outputInBytes);
         os.close();
 
         /*
-        // Marcel
         // Send post request
         DataOutputStream write = new DataOutputStream(connection.getOutputStream());
         write.writeBytes(urlParameter);
